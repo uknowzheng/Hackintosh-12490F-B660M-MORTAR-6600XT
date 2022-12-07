@@ -1,0 +1,1 @@
+# Hackintosh-12490F-B660M-MORTAR-6600XT
