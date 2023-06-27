@@ -548,7 +548,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<true/>
+			<false/>
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -779,7 +779,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-wegnoigpu</string>
+				<string>-wegnoigpu agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -819,7 +819,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K107405QXK3F7AD</string>
+			<string>C02743902GUJG361F</string>
 			<key>ProcessorType</key>
 			<integer>1537</integer>
 			<key>ROM</key>
@@ -829,11 +829,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacPro7,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KF88Y3P7QM</string>
+			<string>C02VL1ZYHX87</string>
 			<key>SystemUUID</key>
-			<string>0D69A6BF-46E7-4F8C-93D0-B84F1318FC7F</string>
+			<string>0BB94CC4-E514-433E-9182-F6BDB6A97EF1</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -842,7 +842,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
+		<string>Create</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
