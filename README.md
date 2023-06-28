@@ -2,7 +2,7 @@
 
 适用于 12490F + B660M迫击炮 DDR4 + RX6600XT 黑苹果引导文件
 
-基于 OpenCore 0.8.6 版本，机型 MacPro 7,1，系统 MacOS 12.6.1
+基于 OpenCore 0.9.3 版本，机型 MacPro 7,1，系统 MacOS 12.6.1
 ![image](./images/system.png)
 
 # 本机配置
@@ -25,12 +25,12 @@
 - [x] 节能三项
 - [x] 睡眠正常
 - [x] 唤醒正常
-- [x] usb2.0/3.0/3.2正常
+- [x] usb2.0/3.0/3.2正常（已经基于MSI MAG B660M MORTAR DDR4做了USB定制）
 - [x] 声卡正常
 - [x] wifi正常
 - [x] 蓝牙正常
 - [x] Airdrop正常
-- [ ] 随航正常
+- [ ] 随航正常（这个无解，除非Smbios改成iMacPro1,1 但是这个型号太老了）
 
 # 避坑指南
 ### SSD
