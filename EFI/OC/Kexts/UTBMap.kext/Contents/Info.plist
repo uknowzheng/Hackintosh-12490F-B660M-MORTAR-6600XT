@@ -44,6 +44,19 @@
 				<dict>
 					<key>HS01</key>
 					<dict>
+						<key>#comment</key>
+						<string>Firmware Type-C pair; retained from previous map; no device captured</string>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+					</dict>
+					<key>HS02</key>
+					<dict>
+						<key>#comment</key>
+						<string>Onboard MSI MYSTIC LIGHT; observed</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -51,8 +64,10 @@
 						AgAAAA==
 						</data>
 					</dict>
-					<key>HS02</key>
+					<key>HS03</key>
 					<dict>
+						<key>#comment</key>
+						<string>Onboard USB2 hub; observed</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -60,8 +75,10 @@
 						AwAAAA==
 						</data>
 					</dict>
-					<key>HS03</key>
+					<key>HS04</key>
 					<dict>
+						<key>#comment</key>
+						<string>USB2 Type-A; Flash Drive observed</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
@@ -69,8 +86,10 @@
 						BQAAAA==
 						</data>
 					</dict>
-					<key>HS04</key>
+					<key>HS05</key>
 					<dict>
+						<key>#comment</key>
+						<string>USB2 Type-A; Flash Drive observed</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
@@ -78,8 +97,10 @@
 						BgAAAA==
 						</data>
 					</dict>
-					<key>HS05</key>
+					<key>HS06</key>
 					<dict>
+						<key>#comment</key>
+						<string>USB2 Type-A; Logitech keyboard observed</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
@@ -87,8 +108,10 @@
 						BwAAAA==
 						</data>
 					</dict>
-					<key>HS06</key>
+					<key>HS07</key>
 					<dict>
+						<key>#comment</key>
+						<string>USB2 Type-A; Rapoo mouse observed</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
@@ -96,8 +119,10 @@
 						CAAAAA==
 						</data>
 					</dict>
-					<key>HS07</key>
+					<key>HS08</key>
 					<dict>
+						<key>#comment</key>
+						<string>Firmware USB3 Type-A pair; retained from previous map; no device captured</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
@@ -105,8 +130,10 @@
 						CQAAAA==
 						</data>
 					</dict>
-					<key>HS08</key>
+					<key>HS09</key>
 					<dict>
+						<key>#comment</key>
+						<string>USB3 Type-A USB2 personality; Flash Drive observed</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
@@ -114,8 +141,10 @@
 						CgAAAA==
 						</data>
 					</dict>
-					<key>HS09</key>
+					<key>HS10</key>
 					<dict>
+						<key>#comment</key>
+						<string>Internal hub - BRCM20702 hub - BCM94360CS2 Bluetooth 05AC-828F; observed</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -125,6 +154,19 @@
 					</dict>
 					<key>SS01</key>
 					<dict>
+						<key>#comment</key>
+						<string>Firmware Type-C pair; retained from previous map; no device captured</string>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>port</key>
+						<data>
+						EQAAAA==
+						</data>
+					</dict>
+					<key>SS02</key>
+					<dict>
+						<key>#comment</key>
+						<string>Onboard USB3 hub; Flash Drive observed at SuperSpeed</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -132,8 +174,10 @@
 						EgAAAA==
 						</data>
 					</dict>
-					<key>SS02</key>
+					<key>SS03</key>
 					<dict>
+						<key>#comment</key>
+						<string>Firmware USB3 Type-A pair; retained from previous map; no device captured</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
@@ -141,8 +185,10 @@
 						GAAAAA==
 						</data>
 					</dict>
-					<key>SS03</key>
+					<key>SS04</key>
 					<dict>
+						<key>#comment</key>
+						<string>SuperSpeed companion of observed Port 10; no SuperSpeed device captured</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
