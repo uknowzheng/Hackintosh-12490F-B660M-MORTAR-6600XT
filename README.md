@@ -2,7 +2,7 @@
 
 适用于 **Intel Core i5-12490F + MSI MAG B660M MORTAR DDR4 + AMD Radeon RX 6600 XT** 的 OpenCore 黑苹果 EFI。
 
-**目前已支持 macOS 26 Tahoe。** 当前配置使用 `MacPro7,1` 机型，包含面向 Tahoe 的声卡、无线网卡与 USB 适配。
+**当前仅面向 macOS 26 Tahoe 维护，不提供旧版 macOS 兼容配置。** 当前配置使用 `MacPro7,1` 机型，包含面向 Tahoe 的声卡、无线网卡与 USB 适配。
 
 > 本 EFI 基于下方硬件配置维护，不是通用安装包。使用前请备份原有 EFI 与重要数据，并生成自己的 SMBIOS 信息。
 
@@ -24,10 +24,10 @@
 
 | 项目 | 说明 |
 | --- | --- |
-| 当前支持系统 | **macOS 26 Tahoe** |
+| 目标系统 | **仅 macOS 26 Tahoe** |
 | SMBIOS | `MacPro7,1` |
 | 引导方案 | OpenCore，以仓库内的 `EFI/` 为准 |
-| 历史系统记录 | macOS Monterey 12.6.1；不代表当前 EFI 已逐一回归所有中间版本 |
+| 历史系统记录 | macOS Monterey 12.6.1；仅为历史信息，不属于当前支持范围 |
 
 旧版使用记录中，CPU、节能三项、睡眠与唤醒、USB 2.0 / 3.0 / 3.2、声卡、Wi-Fi、蓝牙和 AirDrop 均正常。当前 EFI 已加入 Tahoe 适配，但这些历史记录不等同于 macOS 26 下每项功能的独立验收结果。
 
@@ -39,7 +39,7 @@
 | CPU 电源管理 | `SSDT-PLUG-ALT.aml` + `CPUFriend.kext` + `CPUFriendDataProvider.kext` |
 | 板载音频 | `AppleALC.kext` + `SimpleHDA.kext`，使用 `alcid=11` |
 | Realtek RTL8125 有线网络 | `LucyRTL8125Ethernet.kext` |
-| BCM94360CS2 无线网络 | `SimpleBCM.kext`，当前仅在 Darwin 25（macOS 26）加载 |
+| BCM94360CS2 无线网络 | `SimpleBCM.kext` |
 | USB 端口 | `USBToolBox-Tahoe.kext` + 本机定制的 `UTBMap.kext` |
 | 机型相关修正 | `RestrictEvents.kext` |
 | 睡眠 / 唤醒相关 | `SSDT-XDCI-PRW.aml` + `BluetoothUSBWakePolicy.kext`；蓝牙 USB 唤醒策略仍标记为待硬件验证 |
@@ -49,7 +49,7 @@
 - **随航（Sidecar）**：旧版记录为不可用，当前没有新增的可用性验证记录。
 - **蓝牙唤醒**：当前蓝牙策略针对 HS10 链路关闭 USB remote wake；不要将其理解为已验证支持蓝牙键鼠唤醒。
 - **USB 定制**：映射针对本机主板与接线。即使主板型号相同，前置接口、机箱接线或蓝牙 USB 接口变化后也应重新核对。
-- **旧系统兼容性**：`SimpleHDA.kext`、`SimpleBCM.kext` 和 `USBToolBox-Tahoe.kext` 均限定在 Darwin 25 加载，不能直接假设当前 EFI 在旧系统上具有相同功能。
+- **系统范围**：各 Kext 的 `MinKernel` / `MaxKernel` 均留空，不再按内核版本分支加载；仅支持 macOS 26 Tahoe，不维护旧版或未来 macOS 大版本兼容性。
 - **显卡选择**：本仓库针对 RX 6600 XT，不能据此推断所有 RX 6000 系列显卡均受支持。
 - **显示输出**：i5-12490F 无核显，显示器应连接 RX 6600 XT，不要连接主板视频接口。
 
