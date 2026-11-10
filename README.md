@@ -103,11 +103,10 @@
 │       ├── OpenCore.efi
 │       └── config.plist
 ├── images/           # 历史系统与性能截图
-├── Tools/            # 工具归档，使用前确认版本
 └── README.md
 ```
 
-[`Tools/`](./Tools/) 中仍保留 `OpenCore-0.9.3-RELEASE.zip` 等历史工具包，**不代表当前 EFI 的 OpenCore 版本**。实际使用以 [`EFI/`](./EFI/) 和其中的配置为准。
+实际使用以 [`EFI/`](./EFI/) 和其中的配置为准。
 
 ## 系统与性能截图
 
